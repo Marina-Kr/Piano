@@ -4,7 +4,7 @@ document.onkeydown = async function (e) {
     audio.autoplay=true;
 }
 
-function letMusicBeClick (elem) {
+function letMusicBe (elem) {
     let audio = document.querySelector('audio')
     audio.src=`assets/${this.innerHTML}.wav`;
     audio.autoplay=true;
@@ -13,7 +13,7 @@ function letMusicBeClick (elem) {
     window.onload = async function () {
     let keys = document.querySelectorAll('kbd')
         keys.forEach((elem) => {
-        elem.addEventListener('click', letMusicBeClick.bind(elem))
+        elem.addEventListener('click', letMusicBe.bind(elem))
         })
     }
 
